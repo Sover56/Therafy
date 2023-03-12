@@ -1,13 +1,13 @@
 body {
   color: white;
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
+  background-color: #e7d3cc;
   height: 3500px;
   margin: 0;
 }
 
 p {
-  color: white;
+  color: black;
   margin: 0;
 }
 
@@ -23,15 +23,16 @@ a {
 }
 
 button {
-  color: white;
+  color: black;
    border-width: 0;
    background-color: transparent;
    font-family: "Poppins", sans-serif;
 }
 
 button:hover{
+  color: white;
   cursor: pointer;
-  background-color: #3f326f;
+  background-color:#7F8CFF;
   border-radius: 10px;
   padding: 5px;
   transition: all ease-in-out 0.3s;
@@ -39,7 +40,8 @@ button:hover{
 
 header {
   z-index: 100;
-  background-color:#6858a8b3;
+  color: black;
+  background-color:#ffffffb3;
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
@@ -49,7 +51,7 @@ header {
 }
 
 .logo {
-  color: #ffffff;
+  color: #7F8CFF;
   font-weight: 700;
   font-size: 30px;
 }
@@ -99,7 +101,7 @@ header {
   height: 100vh;
 }
 .comment-section {
-  background: #7261ad;
+  background: white;
   height: 2500px;
   width: 40%;
   
@@ -111,12 +113,12 @@ header {
   padding: 20px;
   width: 70%;
   height: fit-content;
-  border-color: #7789a2;
+  border-color: #a28377;
   box-shadow: 1 1 1 ;
   border-width: 2px;
   border-style: solid;
   border-radius: 10px;
-  background-color:#7261ad;
+  background-color:#ffffff;
   display: block;
 
 }
@@ -143,7 +145,7 @@ header {
 }
 
 .post-content {
-  border-color: #bcc1f2;
+  border-color:#a28377;
   border-style: solid;
   border-width: 2px;
   border-bottom: 0;
@@ -156,6 +158,7 @@ header {
 
 
 .comment-list {
+  color: black;
   margin: 10px;
   margin-top: 70px;
   height: 100%;
@@ -193,7 +196,7 @@ ul li {
 }
 
 .comment-wrapper {
-  color: white;
+  color: black;
   justify-content: center;
   border-radius: 10px;
   display: flex;
@@ -295,6 +298,8 @@ ul li {
   
 }
 
+
+
 .popup.active .overlay {
   display: block;
 }
@@ -308,4 +313,9 @@ ul li {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+}
+
+#post-btn:hover  {
+  background-color: #7F8CFF;
+  color:white;
 }
