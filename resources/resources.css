@@ -11,6 +11,7 @@
   justify-content: center;
   margin-top: 50px;
   gap: 20px;
+  padding-bottom: 20px;
 }
 .app {
   box-shadow: 5px 5px gray;
@@ -53,4 +54,52 @@
 
 .articles-content {
   font-size: x-large;
+  padding: 15px;
+  color: black;
+  text-shadow: 1px 1px gray;
+}
+
+.app-container2 {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.app2 {
+  box-shadow: 5px 5px gray;
+  border-radius: 15px;
+  background-color: white;
+  width: 900px;
+  height: 500px;
+  text-decoration: none;
+  color: black;
+}
+
+.app-img2 {
+  width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.app3 {
+  box-shadow: 5px 5px gray;
+  border-radius: 15px;
+  background-color: white;
+  width: 350px;
+  height: 500px;
+  text-decoration: none;
+  color: black;
+}
+
+.book-content {
+  font-size: x-large;
+
+  color: black;
+  text-shadow: 1px 1px gray;
 }
