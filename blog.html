@@ -13,27 +13,6 @@
     <link rel="stylesheet" href="blog/blog.css">
   </head>
     <body>
-      <header>
-        <div class="header-div">
-          <div class="left">
-            <p class="logo">Therafy</p>
-          </div>
-          <div class="middle"></div>
-          <div class="right">
-            <a href="" class="home-btn" target=""><button>Home</button></a>
-          <p>|</p>
-          <a href="" class="" target=""><button>About</button></a>
-          <p>|</p>
-          <a href="./resources/resources.html" class="" target=""><button>Resources</button></a>
-          <p>|</p>
-          <a href="./blog/blog.html" class="" target=""><button>User created posts</button></a>
-          <p>|</p>
-          <a href="./meet.html" class="room" target="_blank"> <button>Talking
-              Room </button> </a>
-            <button id="post-btn" onclick="displayPopup()"> Create a Post </button>
-          </div>
-        </div>
-      </header>
       <section>
         <div class="main-wrapper">
           <div id="main-section">    
@@ -42,22 +21,17 @@
             <div class="comment-list">
               <div class="comment-wrapper">
                 <div class="comment-box">
-                  <ul id="commentor-name-contianer">
-                    <li id="commentor-name">
-                      John 
-                    </li>
+                  <ul id="commentor-name">
                   </ul>
-                  <ul id="comment-text-container" >
-                    <li id="comment-text" >
-                      I think you should Kill yourself
-                      this is completely outrages I cant take it
-                    </li>
+                  <ul id="comment-text" >
                   </ul>
                 </div>
-                <input id="comment-input" type="text" placeholder="Write a comment">
-                <button id="comment-btn"> Comment </button>
               </div>
+              <input id="comment-input" type="text" placeholder="Write a comment">
+              <input id="username-input" type="text" placeholder="Your name">
+              
             </div>
+            <button id="post-btn" onclick="displayPopup()"> Create A Post</button>
           </div>   <!-- popup   --->
         </div>
         <div class="popup" id="popup active">
