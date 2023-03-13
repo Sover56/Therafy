@@ -6,17 +6,27 @@ body {
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+  color:black
+}
 p {
   color: black;
   margin: 0;
 }
 
 #post-btn {
-  background-color: white;
-  color: #7261ad;
+  margin-top: 10px;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #7261ad;
+  color: white;
   border-radius: 10px;
   padding: 5px;
 }
+
 
 a {
   font-family: "Poppins", sans-serif;
@@ -29,60 +39,13 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-button:hover {
-  color: white;
+#post-btn:hover{
+  color: #7261ad;
   cursor: pointer;
-  background-color: #7F8CFF;
+  background-color: white;
   border-radius: 10px;
   padding: 5px;
   transition: all ease-in-out 0.3s;
-}
-
-header {
-  z-index: 100;
-  color: black;
-  background-color: #ffffffb3;
-  backdrop-filter: blur(10px);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-}
-
-.logo {
-  color: #7F8CFF;
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.header-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0px;
-}
-
-
-.left {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 200px;
-}
-
-.middle {
-  flex: 1;
-}
-
-.right {
-  font-weight: 500;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  width: 700px;
-  justify-content: space-around;
-  margin-right: 10px;
 }
 
 
@@ -97,25 +60,27 @@ header {
   gap: 20px;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
   height: 100vh;
 }
 
 .comment-section {
-  background: white;
-  height: 2500px;
-  width: 40%;
-
+  background:#ffffff;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 2500px;
+  
 }
 
-.post {
-  font-size: 15px;
+.post{
+  
+  font-size: 16px;
   color: white;
   padding: 20px;
-  width: 70%;
+  width: 80%;
   height: fit-content;
   border-color: #a28377;
-  box-shadow: 1 1 1;
   border-width: 2px;
   border-style: solid;
   border-radius: 10px;
@@ -141,12 +106,17 @@ header {
   display: inline-block;
 }
 
+#poster-name {
+  overflow: hidden;
+}
 .poster-name {
+  overflow: hidden;
   margin-top: 10px;
 }
 
 .post-content {
-  border-color: #a28377;
+  overflow: hidden;
+  border-color:#a28377;
   border-style: solid;
   border-width: 2px;
   border-bottom: 0;
@@ -156,18 +126,31 @@ header {
   height: fit-content;
 }
 
+.post:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
 
 
 .comment-list {
+  margin-left: 0;
+  margin-right: 20px;
   color: black;
-  margin: 10px;
   margin-top: 70px;
   height: 100%;
 }
 
+ul {
+  font-size: 12px;
+  line-break:strict;
+  line-height: 40px;
+}
+
 ul li {
   list-style: none;
-  height: 60px;
+  height:max-content;
 }
 
 .comment-box {
@@ -177,15 +160,34 @@ ul li {
 }
 
 
+
 #commentor-name-contianer {
+  margin-left: 0;
   width: fit-content;
+  height: fit-content;
 }
 
-#comment-text-contianer {
-  width: fit-content;
+#show-comments-btn {
+  background-color: #7F8CFF;
+  color:white;
+  border-radius: 10px;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#comment-input {
+#show-comments-btn:hover{
+  cursor: pointer;
+  color: #7261ad;
+  border-color:#7F8CFF;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  transition: all ease-in-out 0.3s;
+}
+#comment-input, #username-input {
+  width:50%;
+  display: block;
   padding: 13px;
   border-radius: 20px;
   border-style: solid;
@@ -194,7 +196,8 @@ ul li {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
-
+  font-size: 10px;
+  
 }
 
 .comment-wrapper {
@@ -206,17 +209,19 @@ ul li {
 }
 
 #comment-btn {
+  overflow: auto;
+  width: 50%;
+  display: block;
   color: #6858a8;
   background: white;
   padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   border-width: 2px;
   margin-left: auto;
   margin-right: auto;
   border-color: #7261ad;
   border-style: solid;
   font-family: "Poppins", sans-serif;
+  font-size: 10px;   /* ADD THIS IN MEDIA Q */
   border-radius: 20px;
 }
 
@@ -244,7 +249,9 @@ ul li {
 }
 
 .popup .popup-content {
-  position: absolute;
+  padding: 10px;
+  color: white;
+  position: absolute ;
   z-index: 4;
   border-width: 7px;
   border-color: rgb(208, 208, 208);
@@ -253,19 +260,18 @@ ul li {
   border-style: solid;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  scale: (0);
-  background-color: #7261ad;
+  transform: translate(-50%, -50%); scale: (0);
+  background-color :#a28377;
   width: 30vw;
-  height: 44vh;
-
+  height: fit-content;
+  
 }
 
 #poster-input {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px;
   border-color: white;
   font-family: "Poppins", sans-serif;
@@ -276,7 +282,7 @@ ul li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px;
   border-color: white;
   font-family: "Poppins", sans-serif;
@@ -313,6 +319,8 @@ ul li {
 }
 
 .post-title {
+  padding: 10px;
+  color: white;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -320,5 +328,50 @@ ul li {
 
 #post-btn:hover {
   background-color: #7F8CFF;
-  color: white;
+  color:white;
+}
+
+#post-el:hover {
+  background-color: #a28377;
+  color:white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.inst-text {
+  font-size: 12px;
+}
+
+@media(max-width:800px) {
+  #post-btn {
+    right:30px;
+    font-size: 11px;
+    width:fit-content;
+    padding: 5px;
+  }
+
+  #comment-section {
+    width: 60%;
+  }
+
+  #main-section {
+    width: 40%;
+  }
+
+  .post {
+    width: 50%;
+    font-size: 10px;
+  }
+
+#commentor-name {
+  font-size: 8px;
+}
+
+#comment-text {
+  font-size: 8px;
+}
+
+
 }
