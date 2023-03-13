@@ -5,6 +5,10 @@
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
   border-radius: 0.5rem;
   scroll-snap-align: start;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.347);
+  border-style: solid;
+  border-radius: 15px;
 }
 
 #slider figure {
