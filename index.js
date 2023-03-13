@@ -6,13 +6,13 @@ const blog = `<div w3-include-html="./pages/blog.html"></div>`;
 const meet = `<div w3-include-html="./pages/meet.html"></div>`;
 
 const routes = {
-  404: "404.html",
+  404: "/404.html",
   "/index.html": "/pages/home.html",
-  "/": "pages/home.html",
-  "/about": "pages/about.html",
-  "/resources": "pages/resources.html",
-  "/blog": "pages/blog.html",
-  "/meet": "pages/meet.html",
+  "/": "/pages/home.html",
+  "/about": "/pages/about.html",
+  "/resources": "/pages/resources.html",
+  "/blog": "/pages/blog.html",
+  "/meet": "/pages/meet.html",
 };
 
 const route = (event) => {
