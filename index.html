@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="home/slideshow.css">
     <link rel="stylesheet" href="index.css">
@@ -22,28 +23,25 @@
         </div>
         <div class="middle"></div>
         <div class="right">
-          <a href="#" onclick="onNavigate('/'); return false;" class="home-btn"
-            target=""><button>Home</button></a>
+          <a href="/" onclick="route()" class="home-btn"
+            target="">Home</a>
           <p>|</p>
-          <a href="#" onclick="onNavigate('/about'); return false;" target=""><button>About</button></a>
+          <a href="/about" onclick="route()">About</a>
           <p>|</p>
-          <a href="#" onclick="onNavigate('/blog'); return false;" class=""
-            target=""><button>Blogs</button></a>
+          <a href="/blog" onclick="route()"
+            target="">Blogs</a>
           <p>|</p>
-          <a href="./resources/resources.html"
-            onclick="onNavigate('/resources'); return false;"
-            class=""
-            target=""><button>Resources</button></a>
+          <a href="/resource" onclick="route()"
+            target="">Resources</a>
           <p>|</p>
-          <a href="#" onclick="onNavigate('/meet'); return false;" class="room"
-            target="_blank"> <button>Meet</button></a>
+          <a href="/meet" onclick="route()" class="room"
+            target="_blank">Meet</a>
         </div>
       </div>
     </header>
-    <section id="content"></section>
-    <script src="index.js" type="module"></script>
-    <script>
-      includeHTML(); 
-    </script>
+    <section id="content">
+
+    </section>
+    <script src="index.js"></script>
   </body>
 </html>
