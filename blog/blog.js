@@ -13,7 +13,7 @@ const fetchPosts = async () => {
     mainSection.innerHTML += `
       <div class="post" id="post-${i}" >
         <div class="poster">
-          <img class="pfp" src="assets/profile-pic.jpg">
+          <img class="pfp" src="/assets/profile-pic.jpg">
           <p id="poster-name"> ${response.username} </p>
         </div>
         <div class="post-content">
@@ -89,7 +89,7 @@ function post() {
   
   mainSection.innerHTML += `<div class="post" id="'post'" onclick="showComments()"->
   <div class="poster">
-    <img class="pfp" src="assets/pfp.jpg">
+    <img class="pfp" src="/assets/pfp.jpg">
     <p id="poster-name"> ${posterInput.value} </p>
   </div>
   <div class="post-content">
