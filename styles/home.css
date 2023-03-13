@@ -5,7 +5,7 @@
 .welcome-div {
   width: 100%;
   height: 500px;
-  background-color: rgb(255, 255, 255);
+  background-color:antiquewhite;
   padding-top: 60px;
   margin: 0;
   border-bottom-left-radius: 150px;
@@ -26,6 +26,9 @@
   background-color: white;
   padding: 20px 20px 13px 20px;
   border-radius: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.385);
   margin-top: 40px;
   margin-bottom: 40px;
   transition-duration: 0.5s;
@@ -43,6 +46,7 @@
 }
 
 .el-info-1, .el-info-2, .el-info-3, .el-info-4{
+  color: black;
   display: inline-block;
   width: 100%;
   margin-left: 20px;
@@ -78,13 +82,104 @@
   border: none;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transitions: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
 @media (max-width:700px) {
   .h1-1 { 
     font-size: 30px;
   }
+
+  .welcome-div {
+    height: 300px;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.actived .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.actived .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.actived .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .right{
+    position: fixed;
+    right: -110%;
+    top: 45px;
+    gap: 0;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .home-btn, .about-btn, .blog-btn, .resource-btn, .meet-btn{
+    margin: 10px 0;
+  }
+
+  .right.active{
+    right: 0;
+    margin: 0;
+  }
+
+  header {
+    background-color: white;
+  }
 }
 
 @media (max-width:800px) {
+  .el-1, .el-2, .el-3, .el-4 {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px 13px 20px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition-duration: 0.5s;
+  }
+
+  .img-wrapper-1, .img-wrapper-2, .img-wrapper-3, .img-wrapper-4 {
+    display: inline-block;
+    padding: 0;
+    width: 60%;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 0;
+  }
+  
+  h3 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width:500px) {
   .el-1, .el-2, .el-3, .el-4 {
     width: 85%;
     display: flex;
@@ -114,5 +209,9 @@
   h3 {
     font-size: 15px;
     font-weight: 400;
+  }
+
+  .h1-wrapper {
+    margin-top: 50px;
   }
 }
