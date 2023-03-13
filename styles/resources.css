@@ -31,11 +31,12 @@ p {
   height: fit-content;
   text-decoration: none;
   color: black;
+  
+  transition: all ease-in-out 0.3s;
 }
 
 .app:hover {
   transform: scale(1.05);
-  transition: all ease-in-out 0.3s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
@@ -105,11 +106,12 @@ p {
   text-decoration: none;
   color: black;
   padding: 20px;
+  transition: all ease-in-out 0.3s;
 }
 
 .app2:hover {
   transform: scale(1.05);
-  transition: all ease-in-out 0.3s;
+
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
@@ -124,19 +126,18 @@ p {
 }
 
 .app3 {
-  box-shadow: 5px 5px gray;
+  transition: all ease-in-out 0.3s;
   border-radius: 15px;
   background-color: white;
-  width: 350px;
-  height: 500px;
+  width: 450px;
+  height: fit-content;
   text-decoration: none;
   color: black;
 }
 
 .app3:hover {
-  box-shadow: 10px 10px gray;
-  width: 355px;
-  height: 505px;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.402)
 }
 
 .books-content {

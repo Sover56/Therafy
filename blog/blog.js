@@ -6,7 +6,7 @@ const commentSection = document.querySelector(".comment-section")
 commentSection.style.display = "none"
 
 const fetchPosts = async () => {
- const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XFd7B4nKLEBQFFHi06Eb/comments?item_id=post')
+ const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments?item_id=post')
  let posts = await res.json()
  let i = 1
  posts.forEach((response) => {
@@ -33,7 +33,7 @@ postList.forEach(post => {
     const commentBtn = document.getElementById("comment-btn")
     if (!commentBtn) {
       commentList.innerHTML += 
-      `<button id="comment-btn" onclick="postComment('${post.id}')"> Submit </button>`
+      `<button id="comment-btn" onclick="postComment(${post.id})"> Submit </button>`
     } 
    } )
 });
@@ -82,7 +82,7 @@ function post() {
   
   
   fetch(
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XFd7B4nKLEBQFFHi06Eb/comments/",
+      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments/",
       options
   ).then((response) => console.log(response))
 
@@ -104,26 +104,22 @@ x++
   }
 
 
+
 function showComments(postId) {
   const commentText = document.getElementById("comment-text")
   const commentorName = document.getElementById("commentor-name")
   commentSection.style.display = "block"
   
-  fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XFd7B4nKLEBQFFHi06Eb/comments?item_id=${postId}`)
+  fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments?item_id=${postId}`)
   .then(response => response.json())
   .then(response=> {
     commentText.innerHTML = ""
     commentorName.innerHTML = ""
     response.forEach((username)=> {  
       console.log(commentText)
-        commentText.innerHTML += `<li> ${username.commentBtn}</li>`
+        commentText.innerHTML += `<li> ${username.comment}</li>`
         commentorName.innerHTML += `<li> ${username.username} </li>`
-
     })
-  })
-  .catch(error => {
-    commentText.innerHTML = "No Comments"
-    commentorName.innerHTML = "There are"
   })
 }
 
@@ -152,10 +148,10 @@ const commentText = document.getElementById("comment-text")
       body: JSON.stringify(data),
   }; 
 fetch(
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XFd7B4nKLEBQFFHi06Eb/comments?item_id=comment",
+      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments?item_id=comment",
       options
   ) .then((response) => console.log(response))
-  .then(response => {
+    .then(response => {
     commentText.innerHTML +=`<li>
     ${commentInput.value} </li> ` 
       commentorName.innerHTML += `<li>

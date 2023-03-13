@@ -25,6 +25,8 @@ p {
   color: white;
   border-radius: 10px;
   padding: 5px;
+  transition: all ease-in-out 0.3s;
+
 }
 
 
@@ -86,6 +88,8 @@ button {
   border-radius: 10px;
   background-color: #ffffff;
   display: block;
+  transition: all ease-in-out 0.3s;
+
 
 }
 
@@ -174,6 +178,8 @@ ul li {
   padding: 3px;
   padding-left: 5px;
   padding-right: 5px;
+  transition: all ease-in-out 0.3s;
+}
 }
 
 #show-comments-btn:hover{
@@ -223,6 +229,8 @@ ul li {
   font-family: "Poppins", sans-serif;
   font-size: 10px;   /* ADD THIS IN MEDIA Q */
   border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+
 }
 
 
@@ -304,6 +312,8 @@ ul li {
   padding-right: 55px;
   padding-bottom: 35px;
   border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+}
 
 }
 

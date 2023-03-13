@@ -11,7 +11,7 @@ header {
 }
 
 .logo {
-  color: #6070ff;
+  color: #BBCB87;
   font-weight: 700;
   font-size: 30px;
   margin-right: 30px;
@@ -71,6 +71,6 @@ h1 {
 }
 
 .home-btn:hover, .about-btn:hover, .blog-btn:hover, .resource-btn:hover, .meet-btn:hover{
-  background-color: #6070ff;
+  background-color: #BBCB87;
   color: white;
 }
