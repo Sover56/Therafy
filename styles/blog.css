@@ -19,20 +19,20 @@ p {
 }
 
 a {
-  font-family:  "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 button {
   color: black;
-   border-width: 0;
-   background-color: transparent;
-   font-family: "Poppins", sans-serif;
+  border-width: 0;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
 }
 
-button:hover{
+button:hover {
   color: white;
   cursor: pointer;
-  background-color:#7F8CFF;
+  background-color: #7F8CFF;
   border-radius: 10px;
   padding: 5px;
   transition: all ease-in-out 0.3s;
@@ -41,7 +41,7 @@ button:hover{
 header {
   z-index: 100;
   color: black;
-  background-color:#ffffffb3;
+  background-color: #ffffffb3;
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
@@ -93,32 +93,33 @@ header {
 #main-section {
   margin-top: 100px;
   z-index: 1;
-  display:flex;
+  display: flex;
   gap: 20px;
   flex-direction: column;
   align-items: center;
   width: 80%;
   height: 100vh;
 }
+
 .comment-section {
   background: white;
   height: 2500px;
   width: 40%;
-  
+
 }
 
-.post{
+.post {
   font-size: 15px;
   color: white;
   padding: 20px;
   width: 70%;
   height: fit-content;
   border-color: #a28377;
-  box-shadow: 1 1 1 ;
+  box-shadow: 1 1 1;
   border-width: 2px;
   border-style: solid;
   border-radius: 10px;
-  background-color:#ffffff;
+  background-color: #ffffff;
   display: block;
 
 }
@@ -126,7 +127,7 @@ header {
 .poster {
   vertical-align: center;
   display: flex;
-  width:100%;
+  width: 100%;
   height: fit-content;
 
 }
@@ -145,7 +146,7 @@ header {
 }
 
 .post-content {
-  border-color:#a28377;
+  border-color: #a28377;
   border-style: solid;
   border-width: 2px;
   border-bottom: 0;
@@ -168,6 +169,7 @@ ul li {
   list-style: none;
   height: 60px;
 }
+
 .comment-box {
   font-size: 15px;
   height: fit-content;
@@ -192,7 +194,7 @@ ul li {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
-  
+
 }
 
 .comment-wrapper {
@@ -205,7 +207,7 @@ ul li {
 
 #comment-btn {
   color: #6858a8;
-  background:white ;
+  background: white;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -221,7 +223,7 @@ ul li {
 
 #comment-btn:hover {
   transition: all ease-in-out 0.3s;
-  background-color:#7261ad;
+  background-color: #7261ad;
   color: white;
   border-color: white;
 }
@@ -230,19 +232,19 @@ ul li {
 /* POPUP */
 
 .popup .overlay {
-  position: fixed; 
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
   font-size: 14px;
   display: none;
 }
 
 .popup .popup-content {
-  position: absolute ;
+  position: absolute;
   z-index: 4;
   border-width: 7px;
   border-color: rgb(208, 208, 208);
@@ -251,11 +253,12 @@ ul li {
   border-style: solid;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); scale: (0);
-  background-color :#7261ad;
+  transform: translate(-50%, -50%);
+  scale: (0);
+  background-color: #7261ad;
   width: 30vw;
   height: 44vh;
-  
+
 }
 
 #poster-input {
@@ -265,7 +268,7 @@ ul li {
   margin-top: 20px;
   padding: 10px;
   border-color: white;
-  font-family:  "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 10px;
 }
 
@@ -276,7 +279,7 @@ ul li {
   margin-top: 20px;
   padding: 10px;
   border-color: white;
-  font-family:  "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 10px;
 }
 
@@ -295,7 +298,7 @@ ul li {
   padding-right: 55px;
   padding-bottom: 35px;
   border-radius: 20px;
-  
+
 }
 
 
@@ -306,7 +309,7 @@ ul li {
 
 .popup.active .popup-content {
   transition: all 300ms ease;
-  transform:translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .post-title {
@@ -315,7 +318,7 @@ ul li {
   margin-top: 10px;
 }
 
-#post-btn:hover  {
+#post-btn:hover {
   background-color: #7F8CFF;
-  color:white;
+  color: white;
 }
