@@ -26,10 +26,31 @@ function includeHTML() {
   }
 }
 
-
-
+const contectDiv = document.getElementById()
 const home = `<div w3-include-html="./home/home.html"></div>`;
-const about = `<div w3-include-html="about.html"></div>`
-const resources = `<div w3-include-html="resources.html"></div>`
+const about = `<div w3-include-html="./about/about.html"></div>`
+const resources = `<div w3-include-html="./resources/resources.html"></div>`
+const blog = `<div w3-include-html="./blog/blog.html"></div>`
+const meet = `<div w3-include-html="./meet/meet.html"></div>`
 
-content.innerHTML = home;
+const routes = {
+  '/' : home,
+  '/about' : about,
+  '/resources' : resources,
+  '/blog' : blog,
+  '/meet' : meet
+};
+
+const onNavigate = (pathname) => {
+  window.history.pushState(
+    {},
+    pathname,
+    window.location.origin + pathname
+  )
+  content.innerHTML = routes[pathname]
+  window.onpopstate()
+}
+
+window.onpopstate = () => {
+  content.innerHTML = routes[window.location.pathname];
+}

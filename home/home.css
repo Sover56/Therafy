@@ -1,0 +1,80 @@
+.welcome-div {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 60px;
+  margin: 0;
+  border-bottom-left-radius: 150px;
+}
+
+.el-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.el-1, .el-2, .el-3 {
+  width: 70%;
+  display: flex;
+  vertical-align: top;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px 20px 13px 20px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  transition-duration: 0.5s;
+}
+
+.el-img-1, .el-img-2, .el-img-3 {
+  width: 100%;
+}
+
+.img-wrapper-1, .img-wrapper-2, .img-wrapper-3 {
+  display: inline-block;
+  padding: 0;
+  width: 40%;
+}
+
+.el-img-1, .el-img-2, .el-img-3{
+  border-radius: 20px;
+}
+
+.el-info-1, .el-info-2, .el-info-3{
+  display: inline-block;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.room {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-1, .btn-2, .btn-3 {
+  background-color: white;
+  border-width: 1px;
+  border-color: #7F8CFF;
+  border-radius: 16px;
+  height: 48px;
+  width: 93px;
+  color: #7F8CFF;
+  font-weight: 600;
+  transition-duration: 0.2s;
+}
+
+.el-1:hover, .el-2:hover, .el-3:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+.h3-wrapper{
+  margin-bottom: 50px;
+}
+
+.btn-1:hover, .btn-2:hover, .btn-3:hover {
+  background-color: #6070FF;
+  color: white;
+  border: none;
+}

@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="home/slideshow.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home/home.css">
     <title>Document</title>
   </head>
   <body>
@@ -22,65 +23,22 @@
         </div>
         <div class="middle"></div>
         <div class="right">
-          <a href="" class="home-btn" target=""><button>Home</button></a>
+          <a href="#" onclick="onNavigate('/'); return false;" class="home-btn" target=""><button>Home</button></a>
           <p>|</p>
-          <a href="" class="" target=""><button>About</button></a>
+          <a href="#" onclick="onNavigate('/about'); return false;" target=""><button>About</button></a>
           <p>|</p>
-          <a href="" class="" target=""><button>Blogs</button></a>
+          <a href="#" onclick="onNavigate('/blog'); return false;" class="" target=""><button>Blogs</button></a>
           <p>|</p>
-          <a href="" class="" target=""><button>User created posts</button></a>
+          <a href="#" onclick="onNavigate('/resources'); return false;" class="" target=""><button>Resources</button></a>
           <p>|</p>
-          <a href="./meet.html" class="room" target="_blank"> <button>Talking
-              Room </button> </a>
+          <a href="#" onclick="onNavigate('/meet'); return false;" class="room" target="_blank"> <button>Meet</button></a>
         </div>
       </div>
     </header>
-    <section>
-      <div class="welcome-div">
-        <div class="h1-wrapper">
-          <div class="h1-div">
-            <h1>Hello Beauty!</h1>
-            <h1>Let me embrace you</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="slideshow-wrapper" style="display: flex; justify-content:
-        center;">
-        <div class="gridd" style="display:flex;
-          margin-bottom: 80px;
-          margin-top: 80px;
-          width: 70%;">
-          <div class="grid-5">
-            <div id="slider">
-              <figure>
-                <img src="assets/slideShow-1.png">
-                <img src="assets/slideShow-2.png">
-                <img src="assets/slideShow-3.png">
-                <img src="assets/slideShow-4.png">
-                <img src="assets/slideShow-5.png">
-              </figure>
-            </div>
-            <div class="slider nav">
-              <a href="#slide-1"></a>
-              <a href="#slide-2"></a>
-              <a href="#slide-3"></a>
-              <a href="#slide-4"></a>
-              <a href="#slide-5"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="content">
-      
-    </section>
-
-    <script src="index.js"></script>
+    <section id="content"></section>
+    <script src="index.js" type="module"></script>
     <script>
-      includeHTML();
+      includeHTML(); 
     </script>
   </body>
 </html>
