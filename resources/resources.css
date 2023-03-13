@@ -50,11 +50,12 @@
   color: black;
   margin-top: 50px;
   margin-left: 50px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .articles-content {
   font-size: x-large;
-  padding: 15px;
+  padding: 2px;
   color: black;
   text-shadow: 1px 1px gray;
 }
@@ -76,12 +77,15 @@
   height: 500px;
   text-decoration: none;
   color: black;
+  padding: 20px;
 }
 
 .app-img2 {
   width: 400px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   height: 70%;
   width: 100%;
   object-fit: cover;
