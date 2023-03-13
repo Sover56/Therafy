@@ -26,7 +26,7 @@ function includeHTML() {
   }
 }
 
-const contectDiv = document.getElementById()
+const content = document.getElementById("content")
 const home = `<div w3-include-html="./home/home.html"></div>`;
 const about = `<div w3-include-html="./about/about.html"></div>`
 const resources = `<div w3-include-html="./resources/resources.html"></div>`
