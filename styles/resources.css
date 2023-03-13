@@ -1,6 +1,7 @@
-.resourcse-body {
+.resources-body {
   background-color: #e7d3cc;
   overflow-x: hidden;
+  height: 850px;
 }
 
 .app-container1 {
@@ -8,9 +9,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
-  gap: 20px;
+  gap: 30px;
   padding-bottom: 20px;
 }
+
 .app {
   box-shadow: 5px 5px gray;
   border-radius: 15px;
@@ -19,6 +21,12 @@
   height: 280px;
   text-decoration: none;
   color: black;
+}
+
+.app:hover {
+  height: 285px;
+  width: 355px;
+  box-shadow: 10px 10px gray;
 }
 
 .app-img {
@@ -78,6 +86,12 @@
   padding: 20px;
 }
 
+.app2:hover {
+  box-shadow: 10px 10px gray;
+  width: 905px;
+  height: 405px;
+}
+
 .app-img2 {
   width: 400px;
   border-top-left-radius: 15px;
@@ -99,9 +113,15 @@
   color: black;
 }
 
-.book-content {
-  font-size: x-large;
+.app3:hover {
+  box-shadow: 10px 10px gray;
+  width: 355px;
+  height: 505px;
+}
 
+.books-content {
+  font-size: large;
+  padding: 10px;
   color: black;
   text-shadow: 1px 1px gray;
 }
