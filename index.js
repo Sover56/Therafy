@@ -1,35 +1,36 @@
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
-    }
-  }
-}
+const content = document.getElementById("content");
+const home = `<div w3-include-html="./pages/home.html"></div>`;
+const about = `<div w3-include-html="./pages/about.html"></div>`;
+const resources = `<div w3-include-html="./pages/resources.html"></div>`;
+const blog = `<div w3-include-html="./pages/blog.html"></div>`;
+const meet = `<div w3-include-html="./pages/meet.html"></div>`;
 
+const routes = {
+  404: "/404.html",
+  "/index.html": "/pages/home.html",
+  "/": "/pages/home.html",
+  "/about": "/pages/about.html",
+  "/resources": "/pages/resources.html",
+  "/blog": "/pages/blog.html",
+  "/meet": "/pages/meet.html",
+};
 
+const route = (event) => {
+  event = event || window.event;
+  event.preventDefault();
+  window.history.pushState({}, "", event.target.href);
+  handleLocation();
+  console.log(event.target.href);
+};
 
-const home = `<div w3-include-html="./home/home.html"></div>`;
-const about = `<div w3-include-html="about.html"></div>`
-const resources = `<div w3-include-html="resources.html"></div>`
+const handleLocation = async () => {
+  const path = window.location.pathname;
+  const route = routes[path] || routes[404];
+  const html = await fetch(route).then((data) => data.text());
+  content.innerHTML = html;
+};
 
-content.innerHTML = home;
+window.onpopstate = handleLocation;
+window.route = route;
+
+handleLocation();

@@ -1,0 +1,118 @@
+.h1-1 {
+  font-size: 60px;
+}
+
+.welcome-div {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 60px;
+  margin: 0;
+  border-bottom-left-radius: 150px;
+}
+
+.el-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.el-1, .el-2, .el-3, .el-4 {
+  width: 70%;
+  display: flex;
+  vertical-align: top;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px 20px 13px 20px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  transition-duration: 0.5s;
+}
+
+.el-img-1, .el-img-2, .el-img-3, .el-img-4 {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.img-wrapper-1, .img-wrapper-2, .img-wrapper-3, .img-wrapper-4 {
+  display: inline-block;
+  padding: 0;
+  width: 40%;
+}
+
+.el-info-1, .el-info-2, .el-info-3, .el-info-4{
+  display: inline-block;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.room {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-1, .btn-2, .btn-3, .btn-4 {
+  font-size: 15px;
+  background-color: white;
+  border-width: 1px;
+  border-color: #7F8CFF;
+  border-radius: 20px;
+  height: 48px;
+  width: fit-content;
+  color: #7F8CFF;
+  font-weight: 600;
+  transition-duration: 0.2s;
+  padding: 0px 20px 0px 20px;
+}
+
+.el-1:hover, .el-2:hover, .el-3:hover, .el-4:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+.btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover {
+  background-color: #6070FF;
+  color: white;
+  border: none;
+}
+
+@media (max-width:700px) {
+  .h1-1 { 
+    font-size: 30px;
+  }
+}
+
+@media (max-width:800px) {
+  .el-1, .el-2, .el-3, .el-4 {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px 13px 20px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition-duration: 0.5s;
+  }
+
+  .img-wrapper-1, .img-wrapper-2, .img-wrapper-3, .img-wrapper-4 {
+    display: inline-block;
+    padding: 0;
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 0;
+  }
+  
+  h3 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}

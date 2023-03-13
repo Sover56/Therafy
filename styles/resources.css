@@ -1,0 +1,127 @@
+.resources-body {
+  background-color: #e7d3cc;
+  overflow-x: hidden;
+  height: 850px;
+}
+
+.app-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.app {
+  box-shadow: 5px 5px gray;
+  border-radius: 15px;
+  background-color: white;
+  width: 350px;
+  height: 280px;
+  text-decoration: none;
+  color: black;
+}
+
+.app:hover {
+  height: 285px;
+  width: 355px;
+  box-shadow: 10px 10px gray;
+}
+
+.app-img {
+  width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.link {
+  font-size: large;
+}
+
+.about-app {
+  font-size: large;
+}
+
+.app-content {
+  padding: 15px;
+  height: 50%;
+}
+
+.title {
+  font-size: xx-large;
+  color: black;
+  margin-top: 120px;
+  margin-left: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.articles-content {
+  font-size: x-large;
+  padding: 2px;
+  color: black;
+  text-shadow: 1px 1px gray;
+}
+
+.app-container2 {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.app2 {
+  box-shadow: 5px 5px gray;
+  border-radius: 15px;
+  background-color: white;
+  width: 900px;
+  height: 400px;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+.app2:hover {
+  box-shadow: 10px 10px gray;
+  width: 905px;
+  height: 405px;
+}
+
+.app-img2 {
+  width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.app3 {
+  box-shadow: 5px 5px gray;
+  border-radius: 15px;
+  background-color: white;
+  width: 350px;
+  height: 500px;
+  text-decoration: none;
+  color: black;
+}
+
+.app3:hover {
+  box-shadow: 10px 10px gray;
+  width: 355px;
+  height: 505px;
+}
+
+.books-content {
+  font-size: large;
+  padding: 10px;
+  color: black;
+  text-shadow: 1px 1px gray;
+}

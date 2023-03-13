@@ -1,7 +1,6 @@
-
 header {
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
@@ -63,3 +62,13 @@ h1 {
   margin-top: 100px;
 }
 
+.home-btn, .about-btn, .blog-btn, .resource-btn, .meet-btn{
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+.home-btn:hover, .about-btn:hover, .blog-btn:hover, .resource-btn:hover, .meet-btn:hover{
+  background-color: #6070ff;
+  color: white;
+}
