@@ -1,8 +1,8 @@
 body {
   color: white;
   font-family: "Poppins", sans-serif;
-  background-color: white;
-  height: 3500px;
+  background-color :#BBCB87;
+  height: fit-content;
   margin: 0;
 }
 
@@ -21,8 +21,8 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #BBCB87;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 10px;
   padding: 5px;
   transition: all ease-in-out 0.3s;
@@ -42,10 +42,13 @@ button {
 }
 
 #post-btn:hover{
-  color: #7261ad;
+  color :white;
   cursor: pointer;
-  background-color: white;
+  background-color:#BBCB87;
   border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
   padding: 5px;
   transition: all ease-in-out 0.3s;
 }
@@ -76,7 +79,6 @@ button {
 }
 
 .post{
-  background-color: #BBCB87;
   font-size: 16px;
   color: white;
   padding: 20px;
@@ -86,6 +88,7 @@ button {
   border-width: 2px;
   border-style: solid;
   border-radius: 10px;
+  background-color: #ffffff;
   display: block;
   transition: all ease-in-out 0.3s;
 
@@ -119,7 +122,7 @@ button {
 
 .post-content {
   overflow: hidden;
-  border-color: #a5b66e;
+  border-color:#a28377;
   border-style: solid;
   border-width: 2px;
   border-bottom: 0;
@@ -217,13 +220,11 @@ ul li {
   overflow: auto;
   width: 50%;
   display: block;
-  color: #6858a8;
-  background: white;
+  color: white;
+  background:#BBCB87;
   padding: 10px;
-  border-width: 2px;
   margin-left: auto;
   margin-right: auto;
-  border-color: #7261ad;
   border-style: solid;
   font-family: "Poppins", sans-serif;
   font-size: 10px;   /* ADD THIS IN MEDIA Q */
@@ -235,7 +236,7 @@ ul li {
 
 #comment-btn:hover {
   transition: all ease-in-out 0.3s;
-  background-color: #7261ad;
+  transform: scale(1.1);
   color: white;
   border-color: white;
 }
@@ -260,15 +261,15 @@ ul li {
   color: white;
   position: absolute ;
   z-index: 4;
-  border-width: 7px;
-  border-color: rgb(208, 208, 208);
+  border-width: 5px;
+  border-color: rgba(0, 0, 0, 0.5);
   border-style: double;
   border-radius: 15px;
   border-style: solid;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); scale: (0);
-  background-color :#a28377;
+  background-color :white;
   width: 30vw;
   height: fit-content;
   
@@ -280,7 +281,7 @@ ul li {
   margin-right: auto;
   margin-top: 10px;
   padding: 10px;
-  border-color: white;
+  border-color:#BBCB87;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
 }
@@ -291,14 +292,14 @@ ul li {
   margin-right: auto;
   margin-top: 10px;
   padding: 10px;
-  border-color: white;
+  border-color:#BBCB87;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
 }
 
 #post-el {
-  background-color: white;
-  color: #7261ad;
+  background-color: #BBCB87;
+  color: white;
   width: 60px;
   height: 35px;
   display: block;
@@ -329,24 +330,21 @@ ul li {
 
 .post-title {
   padding: 10px;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 
 #post-btn:hover {
-  background-color: #7F8CFF;
+  background-color: #BBCB87;
   color:white;
 }
 
 #post-el:hover {
-  background-color: #a28377;
+  transform: scale(1.1);
   color:white;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-  transition: all ease-in-out 0.3s;
+
 }
 
 .inst-text {
@@ -383,4 +381,18 @@ ul li {
 }
 
 
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transitions: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
