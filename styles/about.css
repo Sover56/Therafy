@@ -14,10 +14,11 @@
 }
 
 .portfolio-box {
+  transition: all ease-in-out 0.3s;
   border: 2px solid black;
   width: 900px;
   border-radius: 10px;
-  background-color: #6070ff;
+  background-color:#B7DB8A;
 }
 
 .portfolio-img {
@@ -41,6 +42,7 @@
 }
 
 .language-text {
+  font-family: "Poppins", sans-serif;
   font-size: large;
   padding-bottom: 10px;
 }
@@ -52,6 +54,6 @@
 }
 
 .portfolio-box:hover {
-  box-shadow: 15px 15px gray;
-  color: white;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
 }
