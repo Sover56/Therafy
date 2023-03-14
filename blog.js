@@ -2,16 +2,13 @@ let mainSection = document.getElementById("main-section")
 const commentList = document.getElementsByClassName(".comment-list")
 let showCommentBtn = document.getElementById("show-comments-btn")
 const commentSection = document.querySelector(".comment-section")
-let popupLayer = document.querySelector(".popup")
+let popupLayer = document.querySelector(".overlay")
 
-popupLayer.addEventListener("click", () => {
-  popup.style.display = "none"
-})
 
 commentSection.style.display = "none"
 
 const fetchPosts = async () => {
- const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments?item_id=post')
+ const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jFZyUctLCOYRC0gIdV4L/comments?item_id=post')
  let posts = await res.json()
  let i = 1
  posts.forEach((response) => {
@@ -86,7 +83,7 @@ function post() {
 
 
   fetch(
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments/",
+      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jFZyUctLCOYRC0gIdV4L/comments/",
       options
   ).then((response) => console.log(response))
 
@@ -113,7 +110,7 @@ function showComments(postId) {
   const commentorName = document.getElementById("commentor-name")
   commentSection.style.display = "block"
   
-  fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments?item_id=${postId}`)
+  fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jFZyUctLCOYRC0gIdV4L/comments?item_id=${postId}`)
   .then(response => response.json())
   .then(response=> {
     commentText.innerHTML = ""
@@ -155,19 +152,19 @@ function postComment(postId) {
       body: JSON.stringify(data),
   }; 
 fetch(
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments?item_id=comment",
+      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jFZyUctLCOYRC0gIdV4L/comments?item_id=comment",
       options
   ) .then((response) =>  {
+    // if ( usernameInput.value =="") {
+    //   usernameInput.value +=  "Anonymous"
+    // } else {
+    //   usernameInput.value  = usernameInput.value
+    //   commentInput.value = commentInput.value
+    // }
     commentText.innerHTML +=`<li>
     ${commentInput.value} </li> ` 
       commentorName.innerHTML += `<li>
       ${usernameInput.value} </li>`
-      // if ( usernameInput.value =="") {
-      //   commentorName.innerHTML += ` <li> Anonymous </li>`
-      // } else {
-      //   usernameInput.value  = usernameInput.value
-      //   commentInput.value = commentInput.value
-      // }
       commentInput.value = ""
       usernameInput.value = ""
     })
