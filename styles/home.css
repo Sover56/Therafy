@@ -1,11 +1,16 @@
 .h1-1 {
   font-size: 60px;
+  color:white
 }
-
+body, html {
+  background-color: white;
+  color: white;
+}
 .welcome-div {
   width: 100%;
   height: 500px;
-  background-color:antiquewhite;
+  background-color:#BBCB87;
+  color: white;
   padding-top: 60px;
   margin: 0;
   border-bottom-left-radius: 150px;
@@ -23,7 +28,7 @@
   display: flex;
   vertical-align: top;
   justify-content: space-between;
-  background-color: white;
+  background-color: #BBCB87;
   padding: 20px 20px 13px 20px;
   border-radius: 30px;
   border-width: 2px;
@@ -32,6 +37,18 @@
   margin-top: 40px;
   margin-bottom: 40px;
   transition-duration: 0.5s;
+}
+
+.el-2 {
+  background-color: #B7DB8A;
+}
+
+.el-3{
+  background-color: #9CBF70;
+}
+
+.el-4 {
+  background-color: #B7DB8A;
 }
 
 .el-img-1, .el-img-2, .el-img-3, .el-img-4 {
@@ -60,12 +77,11 @@
 .btn-1, .btn-2, .btn-3, .btn-4 {
   font-size: 15px;
   background-color: white;
-  border-width: 1px;
-  border-color: #7F8CFF;
   border-radius: 20px;
   height: 48px;
+  border-style: solid;
   width: fit-content;
-  color: #7F8CFF;
+  color: #74804c;
   font-weight: 600;
   transition-duration: 0.2s;
   padding: 0px 20px 0px 20px;
@@ -77,9 +93,34 @@
 }
 
 .btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover {
-  background-color: #6070FF;
+  background-color: #BBCB87;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
   color: white;
-  border: none;
+}
+
+.btn-2:hover {
+  background-color:#B7DB8A ;
+}
+
+.btn-3:hover {
+  background-color: #9CBF70;
+}
+
+
+.btn-4:hover {
+  background-color: #B7DB8A;
+}
+@media (max-width:700px) {
+  .h1-1 { 
+    font-size: 30px;
+  }
+
+  .welcome-div {
+    height: 300px;
+  }
+
 }
 
 .hamburger {
