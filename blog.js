@@ -33,7 +33,7 @@ postList.forEach(post => {
     const commentBtn = document.getElementById("comment-btn")
     if (!commentBtn) {
       commentList.innerHTML += 
-      `<button id="comment-btn" onclick="postComment(${post.id})"> Submit </button>`
+      `<button id="comment-btn" onclick="postComment('${post.id}')"> Submit </button>`
     } 
    } )
 });
@@ -60,7 +60,6 @@ function displayPopup() {
 
 
 function post() { 
-  var x;
   let postInput = document.getElementById("post-input")
   let posterInput = document.getElementById("poster-input")
   let mainSection = document.getElementById("main-section")
@@ -96,7 +95,6 @@ function post() {
     <p id="post-text"> ${postInput.value} </p>
   </div>
 </div>` 
-x++
   posterInput.value = ""
   postInput.value = ""
   popup.style.display = "none"
@@ -120,6 +118,10 @@ function showComments(postId) {
         commentText.innerHTML += `<li> ${username.comment}</li>`
         commentorName.innerHTML += `<li> ${username.username} </li>`
     })
+  })
+  .catch(error => {
+    commentText.textContent += "No comments"
+    commentorName.textContent += "There are"
   })
 }
 
@@ -150,18 +152,17 @@ const commentText = document.getElementById("comment-text")
 fetch(
       "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9EEXdDYb5o1ICB2tG4xC/comments?item_id=comment",
       options
-  ) .then((response) => console.log(response))
-    .then(response => {
+  ) .then((response) =>  {
     commentText.innerHTML +=`<li>
     ${commentInput.value} </li> ` 
       commentorName.innerHTML += `<li>
       ${usernameInput.value} </li>`
-      if ( usernameInput.value =="") {
-        commentorName.innerHTML += ` <li> Anonymous </li>`
-      } else {
-        usernameInput.value  = usernameInput.value
-        commentInput.value = commentInput.value
-      }
+      // if ( usernameInput.value =="") {
+      //   commentorName.innerHTML += ` <li> Anonymous </li>`
+      // } else {
+      //   usernameInput.value  = usernameInput.value
+      //   commentInput.value = commentInput.value
+      // }
       commentInput.value = ""
       usernameInput.value = ""
   })
