@@ -2,6 +2,11 @@ let mainSection = document.getElementById("main-section")
 const commentList = document.getElementsByClassName(".comment-list")
 let showCommentBtn = document.getElementById("show-comments-btn")
 const commentSection = document.querySelector(".comment-section")
+let popupLayer = document.querySelector(".popup")
+
+popupLayer.addEventListener("click", () => {
+  popup.style.display = "none"
+})
 
 commentSection.style.display = "none"
 
